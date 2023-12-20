@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet');
+
+:root {
+    font-size: 15px;
+    font-family: Roboto, serif;
+  
+    --main-font-color: #000221;
+    --main-border-color: #000221;
+    --button-border-color: rgba(51, 51, 51, 0.48);
+    --main-shadow-color: rgba(0, 0, 0, 0.12);
+    --main-background-color: #F6F7F8;
+    --white-background: #FFF;
+    --icon-background: #333;
+    --footer-line-background: rgba(216, 216, 216, 0.00);
+    --additional-background-color: rgba(255, 255, 255, 0.00);
+    --main-text-color: rgba(0, 0, 0, 0.80);
+    --additional-text-color: rgba(0, 0, 0, 0.54);
+    --shadow-underlined: #666 inset;
+    --shadow-footer: #E7E8EA inset;
+    --button-active-color: #FAB619;
+    --button-color: #FFDD2D;
+    --button-hover-color: #FCC521;
+    --day-text-link: #336FEE;
+  }
+  
+  html, body {
+    color: var(--main-font-color);
+    height: 100%;
+    width: 100%;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-background-color);
+  }
+
+  .disp-flex_al-it-center {
+    display: flex;
+    align-items: center;
+  }
+
+  .disp-flex_al-it-flex-start {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    height: 64px;
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+
+  .fw400_lh24__text {
+    color: var(--main-text-color);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .fs24_fw700_lh28__text {
+    align-self: stretch;
+    color: var(--main-text-color);
+    font-feature-settings: 'liga' off;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+  }
+
+  .main-header {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    box-shadow: 0px 4px 24px 0px var(--main-shadow-color);
+  }
+
+  .main-header_first-level {
+    padding-left: 128px;
+    padding-right: 128px;
+  }
+
+  .main-header_master-component {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .main-header_left-side {
+    gap: 48px;
+    align-self: stretch;
+  }
+
+  .main-header_right-side {
+    justify-content: center;
+    gap: 24px;
+    align-self: stretch;
+  }
+
+  .main-header_left-side_logo-block {
+    gap: 6px;
+  }
+
+  .main-header_right-side_login-block {
+    padding: 20px 0px;
+    gap: 8px;
+  }
+
+  .main-header__login-text {
+    color: var(--day-text-link);
+    text-align: right;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  .main-header_left-side_text-block {
+    height: 64px;
+    gap: 24px;
+  }
+
+  .main-header_left-side_text-block_item-line {
+    box-shadow: 0px -2px 0px 0px var(--shadow-underlined);
+    gap: 6px;
+    align-self: stretch;
+    background: var(--additional-background-color);
+  }
+
+  .main-header_left-side_text-block_item {
+    gap: 6px;
+    align-self: stretch;
+    background: var(--additional-background-color);
+  }
+
+  .main-headerAndFooter__text {
+    color: var(--additional-text-color);
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0%;
+  }
+
+  .main-container {
+    flex: 1 0 auto;
+    width: 1360px;
+    margin: 0 auto;
+  }
+  
+  footer {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 1360px;
+    height: 192px;
+    justify-content: center;
+  }
+
+  .footer-block {
+    width: 1104px;
+    height: 128px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 64px 128px 0px 128px;
+    gap: 20px;
+  }
+
+  .footer-block__line {
+    width: 1104px;
+    height: 20px;
+    flex-shrink: 0;
+    background: var(--footer-line-background);
+    box-shadow: 0px -1px 0px 0px var(--shadow-footer);
+  }
+
+  .footer-block_text-block {
+    width: 1104px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-block_text-block__blueText {
+    color: var(--day-text-link);
+  }
+  
+  main {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+  }
+
+  .section-block {
+    flex-direction: column;
+    width: 1360px;
+    justify-content: center;
+  }
+  
+  .intro-block {
+    height: 732px;
+    padding: 40px 128px;
+    flex-direction: column;
+    gap: 64px;
+  }
+
+  .intro-block_text-block {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .intro-block_text-block_text {
+    width: 912px;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .intro-block_text-block_text__title {
+    align-self: stretch;
+    color: var(--main-text-color);
+    text-align: center;
+    font-feature-settings: 'liga' off;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 48px;
+  }
+
+  .intro-block_text-block_text__subtitle {
+    align-self: stretch;
+    color: var(--main-text-color);
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .intro-block__button {
+    justify-content: center;
+    height: 56px;
+    width: 150px;
+    background: var(--button-color);
+    color: var(--main-text-color);
+    padding: 16px 36px;
+    border-radius: 8px;
+    border-width: 0px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0%;
+  }
+
+  .intro-block__button:hover {
+    background: var(--button-hover-color);
+    border-color: var(--button-hover-color);
+    transition: 0.3s;
+  }
+
+  .intro-block__button:active {
+    background: var(--button-active-color);
+    border-color: var(--button-active-color);
+  }
+
+  .intro-block__button:focus {
+    background: var(--button-color);
+    border: 2px solid var(--button-border-color);
+    transition: 0.3s;
+  }
+
+  .intro-block__img {
+    width: 1104px;
+    height: 460px;
+    flex-shrink: 0;
+  }
+
+  .frame-block {
+    flex-direction: column;
+  }
+
+  .frame-block_title {
+    padding: 76px 224px 24px 224px;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .frame-block_title__text {
+    width: 912px;
+    color: var(--main-text-color);
+    text-align: center;
+    font-feature-settings: 'liga' off;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 48px;
+    margin: 0%;
+  }
+
+  .whom-block_text-block {
+    padding: 24px 128px;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .whom-block_text-block_imgAndText {
+    display: flex;
+    width: 1104px;
+    height: 360px;
+  }
+
+  .whom-block_items {
+    width: 336px;
+    flex-direction: column;
+    padding: 48px 5px 168px 48px;
+    gap: 12px;
+  }
+
+  .whom-block_items_items1 {
+    flex-direction: column;
+    gap: 24px;
+    align-self: stretch;
+  }
+
+  .whom-block_items_items2 {
+    width: 336px;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .block_item {
+    width: 336px;
+    gap: 8px;
+  }
+
+  .whom-block_item__text {
+    width: 316px;
+    flex-shrink: 0;
+  }
+
+  .block_item__icon {
+    width: 12px;
+    height: 24px;
+    flex-shrink: 0;
+  }
+
+  .whom-block__img {
+    width: 720px;
+    height: 360px;
+    border-radius: 24px;
+    background: var(--white-background);
+    flex-shrink: 0;
+  }
+
+  .what-block_vacancies {
+    padding: 24px 128px;
+    flex-direction: row;
+    justify-content: center;
+    gap: 48px;
+  }
+
+  .what-block_vacancy {
+    width: 272px;
+    height: 168px;
+    padding: 32px;
+    flex-direction: column;
+    gap: 24px;
+    border-radius: 24px;
+    background:var(--white-background);
+  }
+
+  .what-block_vacancy_data {
+    flex-direction: column;
+    gap: 16px;
+    align-self: stretch;
+  }
+
+  .what-block_vacancy_data__text {
+    align-self: stretch;
+  }
+
+  .how-block_cards {
+    padding: 24px 128px;
+    justify-content: center;
+    flex-direction: row;
+    gap: 48px;
+  }
+
+  .how-block_card {
+    width: 464px;
+    height: 148px;
+    padding: 32px;
+    flex-direction: column;
+    gap: 32px;
+    flex-shrink: 0;
+    border-radius: 24px;
+    background: var(--white-background);
+  }
+
+  .how-block_card_text-block {
+    flex-direction: column;
+    gap: 44px;
+  }
+
+  .how-block_card_title {
+    width: 464px;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .how-block_card_text-block1 {
+    flex-direction: column;
+    gap: 24px;
+    align-self: stretch;
+  }
+
+  .how-block_card_text-block2 {
+    width: 464px;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .block_item__text {
+    width: 444px;
+    flex-shrink: 0;
+  }
+
+  .free-block_cards {
+    padding: 24px 128px;
+    justify-content: center;
+    gap: 48px;
+  }
+
+  .free-block_card {
+    height: 256px;
+    padding: 32px;
+    flex-direction: column;
+    gap: 44px;
+    border-radius: 24px;
+    background: var(--white-background);
+  }
+
+  .free-block__icon-hat {
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+  }
+
+  .free-block_card_text-block {
+    width: 464px;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .free-block_card__title-text {
+    align-self: stretch;
+    color: var(--main-text-color);
+    font-feature-settings: 'liga' off;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+  }
+
+  .free-block_card_text-block1 {
+    width: 464px;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .steps-block_steps {
+    padding: 24px 128px;
+    justify-content: center;
+    flex-direction: row;
+    gap: 48px;
+  }
+
+  .steps-block_step {
+    position: relative;
+    top: 28px;
+    width: 240px;
+    height: 188px;
+  }
+
+  .steps-block_step_text-block {
+    width: 176px;
+    padding: 56px 32px 32px 32px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 24px;
+    background: var(--white-background);
+  }
+
+  .steps-block_step__text {
+    align-self: stretch;
+    text-align: center;
+  }
+
+  .steps-block_step_icon-block {
+    position: absolute;
+    top: -28px;
+    left: 92px;
+    width: 56px;
+    height: 32px;
+    padding: 12px 0px;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: var(--icon-background);
+  }
+
+  .steps-block_step__icon {
+    height: 32px;
+    width: 56px;
+    flex-shrink: 0;
+    color: var(--white-background);
+    text-align: center;
+    font-feature-settings: 'liga' off;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 32px;
+  }
