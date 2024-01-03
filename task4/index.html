@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="./index.css">
+    <script src="main.js" defer></script>
+    <title>Админка карточек (товаров)</title>
+</head>
+<body>
+    <header>
+        <div class="title-text">Бирюков Влад 6409</div>
+        <button class="header__button" id="upload-button">Засетапить начальные значения</button>
+    </header>
+    <div class="main-container">
+        <div class="create-block">
+            <div class="title-text">Форма добавления карточки товара</div>
+            <form class="create-block_content" id="card-form">
+                <input class="create-block_content__input" name="name" type="text" placeholder="Имя"></input>
+                <textarea class="create-block_content__input" name="description" placeholder="Описание"></textarea>
+                <input class="create-block_content__input" name="link" type="url" placeholder="Ссылка на изображение"></input>
+                <input class="create-block_content__input" name="code" type="number" placeholder="Код товара"></input>
+                <input class="create-block_content__input" name="provider" type="text" placeholder="Поставщик"></input>
+                <div class="create-block_content_buttons">
+                    <button class="create-block_content__button" id="add-button">Добавить</button>
+                    <button class="create-block_content__button invisible" id="change-button">Изменить</button>
+                </div>
+            </form>
+        </div>
+        <div class="list-block">
+            <div class="title-text">Витрина карточек</div>
+            <div class="list-block_cards"></div>
+            <!-- <div class="list-block_card">
+                <img class="list-block_card__image" src="http://kartinkof.club/uploads/posts/2022-04/1649964730_32-kartinkof-club-p-arbuz-kartinki-prikolnie-34.jpg" width="127" height="127" alt="Картинка товара">
+                <div class="list-block_card_content">
+                    <div class="list-block_card_content__title">
+                        <h2>Арбуз</h2>
+                        <h2>id: 2</h2>
+                    </div>
+                    <p class="list-block_card_content__description">Блин, такой вкусный просто ужас, мне его папа привез с отпуска, наконец-то ему дали отпуск</p>
+                    <p class="list-block_card_content__provider">Соль-Илецк</p>
+                </div>
+                <div class="list-block_card_buttons">
+                  <button class="list-block_card__button" id="change-button">Изменить</button>
+                  <button class="list-block_card__button">Удалить</button>
+                </div>
+              </div> -->
+        </div>
+    </div>
+</body>
