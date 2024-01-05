@@ -45,38 +45,41 @@ header {
     gap: 24px;
 }
 
-.header__button {
-    justify-content: center;
-    height: 56px;
-    width: 280px;
-    background: var(--gray-color);
-    color: var(--brown-color);
-    padding: 10px 20px;
-    border-radius: 8px;
-    border-width: 0px;
-    font-weight: 400;
-    line-height: 24px;
-    margin: 0%;
+.primary-button {
+  justify-content: center;
+  background: var(--gray-color);
+  color: var(--brown-color);
+  padding: 10px 20px;
+  border-radius: 8px;
+  border-width: 0px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0%;
 }
 
-.header__button:hover {
+.primary-button:hover {
     background: var(--brown-color);
     border-color: var(--brown-color);
     color: var(--gray-color);
     transition: 0.3s;
 }
 
-.header__button:active {
+.primary-button:active {
     background: var(--brown-color);
     border-color: var(--brown-color);
     color: var(--gray-color);
 }
 
-.header__button:focus {
+.primary-button:focus {
     background: var(--brown-color);
     color: var(--gray-color);
     border: 2px solid var(--blue-color);
     transition: 0.3s;
+}
+
+.header__button {
+  height: 44px;
+  width: 270px;
 }
 
 .main-container {
@@ -121,42 +124,6 @@ header {
     margin-top: 10px;
 }
 
-.create-block_content__button {
-    justify-content: center;
-    background: var(--gray-color);
-    color: var(--brown-color);
-    padding: 10px 20px;
-    border-radius: 8px;
-    border-width: 0px;
-    font-weight: 400;
-    line-height: 24px;
-    margin: 0%;
-}
-
-.create-block_content__button:hover {
-    background: var(--brown-color);
-    border-color: var(--brown-color);
-    color: var(--gray-color);
-    transition: 0.3s;
-}
-
-.create-block_content__button:active {
-    background: var(--brown-color);
-    border-color: var(--brown-color);
-    color: var(--gray-color);
-}
-
-.create-block_content__button:focus {
-    background: var(--brown-color);
-    color: var(--gray-color);
-    border: 2px solid var(--blue-color);
-    transition: 0.3s;
-}
-
-.invisible {
-    display: none;
-}
-
 .list-block {
     display: flex;
     justify-content: center;
@@ -178,6 +145,17 @@ header {
     justify-content: space-between;
     width: 300px;
     height: max-content;
+    border: 1px solid var(--gray-color);
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  .list-block_card_skeleton {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    height: 500px;
     border: 1px solid var(--gray-color);
     border-radius: 5px;
     padding: 10px;
@@ -211,34 +189,59 @@ header {
     justify-content: space-between;
   }
 
-  .list-block_card__button {
-    justify-content: center;
-    background: var(--gray-color);
-    color: var(--brown-color);
-    padding: 10px 20px;
-    border-radius: 8px;
-    border-width: 0px;
-    font-weight: 400;
-    line-height: 24px;
-    margin: 0%;
+.loader {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  width: 48px;
+  height: 48px;
+  border: 3px dotted var(--blue-color);
+  border-style: solid solid dotted dotted;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 2s linear infinite;
+  }
+.loader::after {
+  position: absolute;
+  content: '';  
+  box-sizing: border-box;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border: 3px dotted var(--brown-color);
+  border-style: solid solid dotted;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  animation: rotationBack 1s linear infinite;
+  transform-origin: center center;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+@keyframes rotationBack {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
 }
 
-.list-block_card__button:hover {
-    background: var(--brown-color);
-    border-color: var(--brown-color);
-    color: var(--gray-color);
-    transition: 0.3s;
+.invisible {
+  display: none;
 }
 
-.list-block_card__button:active {
-    background: var(--brown-color);
-    border-color: var(--brown-color);
-    color: var(--gray-color);
-}
-
-.list-block_card__button:focus {
-    background: var(--brown-color);
-    color: var(--gray-color);
-    border: 2px solid var(--blue-color);
-    transition: 0.3s;
+.nonclick-overlay {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
 }
