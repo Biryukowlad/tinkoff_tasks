@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+:root {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--blue-color);
+
+    --white-color: #fdfdff;
+    --blue-color: #0f2661;
+    --gray-color: #737583;
+    --brown-color: #b9a292;
+}
+
+.info-film {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 900px;
+    height: 650px;
+    margin-left: 20px;
+}
+
+.info-film_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.info-film_header_item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.info-film_header_item:hover {
+    color: blue;
+}
+
+.info-film_header_item__icon {
+    margin-right: 30px;
+    margin-top: 10px;
+}
+
+.info-film_header_id__text {
+    margin-right: 10px;
+}
+
+.info-film_header_edit__text {
+    margin-left: 10px;
+}
+
+.info-film_header_edit__text:hover {
+    color: blue;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.info-film_top {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-top: 20px;
+}
+
+.info-film_top__img {
+    width: 200px;
+    height: 300px;
+}
+
+.info-film_top_text {
+    margin-left: 10px;
+}
+
+.info-film_top__title {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.info-film_top_item {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-direction: row;
+    
+}
+
+.info-film_top__gray-text {
+    color: var(--gray-color);
+    width: 150px;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+.info-film_top__blue-text {
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.flDirRow-jusConSpBet {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 650px;
+    flex-direction: row;
+}
+
+
+.info-film_top_actors {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-film_bottom {
+    margin-top: 30px;
+}
+
+.info-film_bottom_plot__label {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.info-film_bottom_plot__text {
+    width: 850px;
+    height: auto;
+    max-height: 400px;
+    margin-bottom: 15px;
+}
+
+.info-film_bottom_rating-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.info-film_bottom_rating-block__label {
+    font-size: 15px;
+    font-weight: 600;
+    margin-right: 30px;
+}
+
+.info-film_bottom_rating-block__value {
+    font-size: 24px;
+    font-weight: 900;
+}

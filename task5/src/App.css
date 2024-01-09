@@ -1,0 +1,4 @@
+.films-content {
+  display: flex;
+  flex-direction: row;
+}
